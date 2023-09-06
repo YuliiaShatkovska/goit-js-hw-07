@@ -44,34 +44,3 @@ function onGalleryImagesClick(event) {
     }
   });
 }
-
-// document.addEventListener("keydown", (event) => {
-//   if (event.code === "Escape") {
-//     instance.close();
-//   }
-// });
-
-// const createEl = galleryItems.forEach(function ({
-//   preview,
-//   original,
-//   description,
-// }) {
-//   const galleryItemImg = document.createElement("img");
-//   const galleryItemLink = document.createElement("a");
-//   const galleryItem = document.createElement("li");
-
-//   galleryItemImg.classList.add("gallery__image");
-//   galleryItemImg.src = `${preview}`;
-//   galleryItemImg.dataset.source = `${original}`;
-//   galleryItemImg.alt = `${description}`;
-
-//   //   console.log(galleryItemImg);
-
-//   galleryItemLink.classList.add("gallery__link");
-//   galleryItemLink.href = `${original}`;
-
-//   //   console.log(galleryItemLink);
-
-//   galleryItem.classList.add("gallery__item");
-//   //   console.log(galleryItem);
-// });
