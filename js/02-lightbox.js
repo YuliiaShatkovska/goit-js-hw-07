@@ -23,19 +23,10 @@ function createGallaryCards(cards) {
 
 galleryContainer.insertAdjacentHTML("beforeend", cardsMarkup);
 
-galleryContainer.addEventListener("click", onGalleryImagesClick);
-
-function onGalleryImagesClick(event) {
-  event.preventDefault();
-  if (!event.target.classList.contains("gallery__image")) {
-    return;
-  }
-
-  const lightbox = new SimpleLightbox(".gallery a", {
-    captionDelay: 250,
-    captionSelector: "img",
-    captionType: "attr",
-    captionsData: "alt",
-    captionPosition: "bottom",
-  });
-}
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionDelay: 250,
+  captionSelector: "img",
+  captionType: "attr",
+  captionsData: "alt",
+  captionPosition: "bottom",
+});
